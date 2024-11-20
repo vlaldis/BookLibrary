@@ -2,6 +2,16 @@
 
 Sample book library
 
+## How to run
+```
+1. Open sln in visual studio
+0. run as docker-compose
+
+OR use
+
+docker compose up -d
+```
+
 ## Requirements
 1. Create an ASP.NET Core application for managing borrowed books.
 0. Use database models for users and books and a data layer that will enable communication with the database (e.g. using Entity Framework Core).
