@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<ItemGroup>
+		<PackageReference Include="Quartz.AspNetCore" Version="*" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\BookLibrary.DataLayer\BookLibrary.DataLayer.csproj" />
+	</ItemGroup>
+
+</Project>

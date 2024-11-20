@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookLibrary.DataLayer\BookLibrary.DataLayer.csproj" />
+    <ProjectReference Include="..\BookLibrary.Dto\BookLibrary.Dto.csproj" />
+    <ProjectReference Include="..\BookLibrary.Services.Abstractions\BookLibrary.Services.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

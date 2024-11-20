@@ -1,0 +1,26 @@
+services:
+  booklibrary:
+    image: ${DOCKER_REGISTRY-}booklibrary
+    build:
+      context: .
+      dockerfile: BookLibrary/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=db;Database=BookLibrary;User=sa;Password=YourStrong@Passw0rd;TrustServerCertificate=true;Encrypt=False;
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Passw0rd
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqldata:/var/opt/mssql
+
+volumes:
+  sqldata:

@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookLibrary.Dto\BookLibrary.Dto.csproj" />
+  </ItemGroup>
+
+</Project>
